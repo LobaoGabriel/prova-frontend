@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólios UNIESP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --cor-fundo: #ffffff;
+            --cor-preta: #181c18;
+            --cor-cinza: #3c3c3c;
+            --cor-vermelho: #de1604;
+        }
+
+        body {
+            background: var(--cor-fundo);
+            color: var(--cor-preta);
+            font-family: "Inter", Arial, sans-serif;
+        }
+
+        .nav-link {
+            color: var(--cor-preta) !important;
+            transition: .3s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--cor-vermelho) !important;
+            font-weight: 700;
+        }
+
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--cor-cinza);
+        }
+
+        .projeto-card {
+            border-radius: 12px;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            transition: .3s;
+        }
+
+        .projeto-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+        }
+
+        .projeto-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: var(--cor-cinza);
+            border-top: 1px solid #e5e5e5;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="border-bottom" style="background: #ffffff;">
+    <nav class="navbar navbar-expand-lg navbar-light container py-2">
+
+        <a class="navbar-brand fw-bold" href="index.html" style="color: #181c18;">
+            Portfólios UNIESP
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold active" href="index.html">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="quem-somos.html">Quem somos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="diego.html">Diego</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="mauro.html">Mauro</a>
+
+                </li>                
+
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="robson.html">Robson</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Galeria de Portfólios</h1>
+    <p>
+        Projeto acadêmico desenvolvido para transformar portfólios em experiências digitais simples, 
+        organizadas e acessíveis. Escolha um designer e explore seus trabalhos.
+    </p>
+</section>
+
+<div class="container pb-5">
+
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+            <div class="projeto-card">
+                <img src="diego/Imagens/diego-imagem.png" class="projeto-img" alt="Portfólio de Diego">
+                <div class="p-3">
+                    <h5 class="fw-bold mb-1">Diego</h5>
+                    <p class="text-muted" style="font-size: 14px;">Designer Gráfico – Identidade Visual, Branding e Social Media.</p>
+                    <a href="diego.html" class="btn btn-dark mt-2 w-100" style="background: var(--cor-preta);">Acessar portfólio</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="projeto-card">
+                <img src="mauro/IMAGENS/foto de perfil.png" class="projeto-img" alt="Portfólio de Mauro">
+                <div class="p-3">
+                    <h5 class="fw-bold mb-1">Mauro</h5>
+                    <p class="text-muted" style="font-size: 14px;">Arte abstrata, minimalismo e composição digital.</p>
+                    <a href="mauro.html" class="btn btn-dark mt-2 w-100" style="background: var(--cor-preta);">Acessar portfólio</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="projeto-card">
+                <img src="robson/IMAGENS/177A0971.JPG" class="projeto-img" alt="Robson">
+                <div class="p-3">
+                    <h5 class="fw-bold mb-1">Robson</h5>
+                    <p class="text-muted" style="font-size: 14px;">Conheça os alunos responsáveis pelo desenvolvimento deste trabalho.</p>
+                    <a href="robson.html" class="btn btn-dark mt-2 w-100" style="background: var(--cor-preta);">Acessar portfólio</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2025 — Equipe UNIESP — Projeto desenvolvido para fins acadêmicos.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
